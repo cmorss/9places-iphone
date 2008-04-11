@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* _PlacesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* _PlacesAppDelegate.m */; };
+		1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		36582D6E0D999E430036CD85 /* TripsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36582D6D0D999E430036CD85 /* TripsView.m */; };
+		36582DD80D99B3F40036CD85 /* TripsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36582DD70D99B3F40036CD85 /* TripsViewController.m */; };
+		36582DDB0D99B4530036CD85 /* TripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36582DDA0D99B4530036CD85 /* TripViewController.m */; };
+		36582E330D99CB230036CD85 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 36582E320D99CB230036CD85 /* plus.png */; };
+		36582E4A0D99D0540036CD85 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 36582E490D99D0540036CD85 /* Trip.m */; };
+		367CBC1C0DA5B46000F3A956 /* Landmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 367CBC1B0DA5B46000F3A956 /* Landmark.m */; };
+		367CBC1E0DA5B57A00F3A956 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367CBC1D0DA5B57A00F3A956 /* CoreLocation.framework */; };
+		368511DE0DA6E9BF0058619B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 368511DD0DA6E9BF0058619B /* libsqlite3.0.dylib */; };
+		368511FA0DA6FAAA0058619B /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 368511F90DA6FAAA0058619B /* Database.m */; };
+		3685122B0DA701490058619B /* trips.db in Resources */ = {isa = PBXBuildFile; fileRef = 3685122A0DA701490058619B /* trips.db */; };
+		3685122D0DA701580058619B /* trips.sql in Resources */ = {isa = PBXBuildFile; fileRef = 3685122C0DA701580058619B /* trips.sql */; };
+		36A739100DA938D600C4D763 /* Statement.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A7390F0DA938D600C4D763 /* Statement.m */; };
+		36AD3BA70D9F238100D84243 /* TripHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AD3BA60D9F238100D84243 /* TripHeaderCell.m */; };
+		36BAA2210DA1A48A007E0064 /* TripDescriptionTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BAA2200DA1A48A007E0064 /* TripDescriptionTableCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* _PlacesAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _PlacesAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* _PlacesAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _PlacesAppDelegate.m; sourceTree = "<group>"; };
+		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* 9Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* 9Places_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 9Places_Prefix.pch; sourceTree = "<group>"; };
+		36582D6C0D999E430036CD85 /* TripsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsView.h; sourceTree = "<group>"; };
+		36582D6D0D999E430036CD85 /* TripsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsView.m; sourceTree = "<group>"; };
+		36582DD60D99B3F40036CD85 /* TripsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripsViewController.h; sourceTree = "<group>"; };
+		36582DD70D99B3F40036CD85 /* TripsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripsViewController.m; sourceTree = "<group>"; };
+		36582DD90D99B4530036CD85 /* TripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripViewController.h; sourceTree = "<group>"; };
+		36582DDA0D99B4530036CD85 /* TripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripViewController.m; sourceTree = "<group>"; };
+		36582E320D99CB230036CD85 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		36582E480D99D0540036CD85 /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Trip.h; path = Classes/Models/Trip.h; sourceTree = "<group>"; };
+		36582E490D99D0540036CD85 /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Trip.m; path = Classes/Models/Trip.m; sourceTree = "<group>"; };
+		367CBC1A0DA5B46000F3A956 /* Landmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Landmark.h; path = Classes/Models/Landmark.h; sourceTree = "<group>"; };
+		367CBC1B0DA5B46000F3A956 /* Landmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Landmark.m; path = Classes/Models/Landmark.m; sourceTree = "<group>"; };
+		367CBC1D0DA5B57A00F3A956 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		368511DD0DA6E9BF0058619B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator2.0.sdk/usr/lib/libsqlite3.0.dylib; sourceTree = DEVELOPER_DIR; };
+		368511F80DA6FAAA0058619B /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Database.h; path = Models/Database.h; sourceTree = "<group>"; };
+		368511F90DA6FAAA0058619B /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Database.m; path = Models/Database.m; sourceTree = "<group>"; };
+		3685122A0DA701490058619B /* trips.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = trips.db; sourceTree = "<group>"; };
+		3685122C0DA701580058619B /* trips.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trips.sql; sourceTree = "<group>"; };
+		36A7390E0DA938D600C4D763 /* Statement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Statement.h; path = Database/Statement.h; sourceTree = "<group>"; };
+		36A7390F0DA938D600C4D763 /* Statement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Statement.m; path = Database/Statement.m; sourceTree = "<group>"; };
+		36AD3BA50D9F238100D84243 /* TripHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TripHeaderCell.h; path = Classes/Renderers/TripHeaderCell.h; sourceTree = "<group>"; };
+		36AD3BA60D9F238100D84243 /* TripHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TripHeaderCell.m; path = Classes/Renderers/TripHeaderCell.m; sourceTree = "<group>"; };
+		36BAA21F0DA1A48A007E0064 /* TripDescriptionTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripDescriptionTableCell.h; sourceTree = "<group>"; };
+		36BAA2200DA1A48A007E0064 /* TripDescriptionTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripDescriptionTableCell.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				1D3623EC0D0F72F000981E51 /* CoreGraphics.framework in Frameworks */,
+				367CBC1E0DA5B57A00F3A956 /* CoreLocation.framework in Frameworks */,
+				368511DE0DA6E9BF0058619B /* libsqlite3.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				36A7390D0DA938B300C4D763 /* Database */,
+				36582E460D99CFAB0036CD85 /* Models */,
+				36AD3B440D9D8D6D00D84243 /* Renderers */,
+				36582D6C0D999E430036CD85 /* TripsView.h */,
+				36582D6D0D999E430036CD85 /* TripsView.m */,
+				1D3623240D0F684500981E51 /* _PlacesAppDelegate.h */,
+				1D3623250D0F684500981E51 /* _PlacesAppDelegate.m */,
+				36582DD60D99B3F40036CD85 /* TripsViewController.h */,
+				36582DD70D99B3F40036CD85 /* TripsViewController.m */,
+				36582DD90D99B4530036CD85 /* TripViewController.h */,
+				36582DDA0D99B4530036CD85 /* TripViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				368511DD0DA6E9BF0058619B /* libsqlite3.0.dylib */,
+				367CBC1D0DA5B57A00F3A956 /* CoreLocation.framework */,
+				1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* 9Places.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				3685122C0DA701580058619B /* trips.sql */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* 9Places_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3685122A0DA701490058619B /* trips.db */,
+				36582E320D99CB230036CD85 /* plus.png */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36582E460D99CFAB0036CD85 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36582E480D99D0540036CD85 /* Trip.h */,
+				36582E490D99D0540036CD85 /* Trip.m */,
+				367CBC1A0DA5B46000F3A956 /* Landmark.h */,
+				367CBC1B0DA5B46000F3A956 /* Landmark.m */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		36A7390D0DA938B300C4D763 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				368511F90DA6FAAA0058619B /* Database.m */,
+				368511F80DA6FAAA0058619B /* Database.h */,
+				36A7390E0DA938D600C4D763 /* Statement.h */,
+				36A7390F0DA938D600C4D763 /* Statement.m */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		36AD3B440D9D8D6D00D84243 /* Renderers */ = {
+			isa = PBXGroup;
+			children = (
+				36AD3BA50D9F238100D84243 /* TripHeaderCell.h */,
+				36AD3BA60D9F238100D84243 /* TripHeaderCell.m */,
+				36BAA21F0DA1A48A007E0064 /* TripDescriptionTableCell.h */,
+				36BAA2200DA1A48A007E0064 /* TripDescriptionTableCell.m */,
+			);
+			name = Renderers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* 9Places */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "9Places" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 9Places;
+			productName = 9Places;
+			productReference = 1D6058910D05DD3D006BFB54 /* 9Places.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "9Places" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* 9Places */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36582E330D99CB230036CD85 /* plus.png in Resources */,
+				3685122B0DA701490058619B /* trips.db in Resources */,
+				3685122D0DA701580058619B /* trips.sql in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* _PlacesAppDelegate.m in Sources */,
+				36582D6E0D999E430036CD85 /* TripsView.m in Sources */,
+				36582DD80D99B3F40036CD85 /* TripsViewController.m in Sources */,
+				36582DDB0D99B4530036CD85 /* TripViewController.m in Sources */,
+				36582E4A0D99D0540036CD85 /* Trip.m in Sources */,
+				36AD3BA70D9F238100D84243 /* TripHeaderCell.m in Sources */,
+				36BAA2210DA1A48A007E0064 /* TripDescriptionTableCell.m in Sources */,
+				367CBC1C0DA5B46000F3A956 /* Landmark.m in Sources */,
+				368511FA0DA6FAAA0058619B /* Database.m in Sources */,
+				36A739100DA938D600C4D763 /* Statement.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = 9Places_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator2.0.sdk/usr/lib\"",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = 9Places;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = 9Places_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator2.0.sdk/usr/lib\"",
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = 9Places;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=aspen*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "9Places" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "9Places" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
