@@ -72,18 +72,22 @@
     return 1;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
-        withAvailableCell:(UITableViewCell *)availableCell {
 
-  NSLog(@"%s indexPath row = %d, length = %d, section = %d", _cmd, [indexPath row], [indexPath length], [indexPath section]);
+		
+- (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
+    if (cell == nil) {
+        // Create a new cell. CGRectZero allows the cell to determine the appropriate size.
+        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"MyIdentifier"] autorelease];
+    }
 
     switch (indexPath.section) {
     	case 0:
 				switch ([indexPath row]) {
-					case 0: return [self cellForTitle:availableCell];
-					case 1: return [self cellForDescription:availableCell];
+					case 0: return [self cellForTitle:cell];
+					case 1: return [self cellForDescription:cell];
 				}
-    	default: return [self cellForLandmarkAtIndexPath:indexPath withAvailableCell:availableCell];
+    	default: return [self cellForLandmarkAtIndexPath:indexPath withAvailableCell:cell];
     }
 		
 		return nil;

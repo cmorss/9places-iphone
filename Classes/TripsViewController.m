@@ -61,16 +61,16 @@
 }
 
 - (void)inspectTrip:(Trip *)aTrip {
-    // Create the detail view lazily
-    if (tripViewController == nil) {
-        tripViewController = [[TripViewController alloc] init];
-    }
-		
-    // Set the detail controller's inspected item to the currently-selected book.
-    [tripViewController setTrip:aTrip];
-    
-    // "Push" the detail view on to the navigation controller's stack.
-    [self.navigationController pushViewController:tripViewController animated:YES];  
+	// Create the detail view lazily
+	if (tripViewController == nil) {
+			tripViewController = [[TripViewController alloc] init];
+	}
+	
+	// Set the detail controller's inspected item to the currently-selected book.
+	[tripViewController setTrip:aTrip];
+	
+	// "Push" the detail view on to the navigation controller's stack.
+	[self.navigationController pushViewController:tripViewController animated:YES];  
 }
 
 #pragma mark UITableViewDataSource Methods
@@ -91,31 +91,28 @@
     return UITableViewCellAccessoryDisclosureIndicator;
 }
 
-// This method is called when the user clicks on an accessory button of type "Detail Disclosure Button". The row of the cell
-// of the button can be retrieved from the index path.
-- (NSIndexPath *)tableView:(UITableView *)tv willSelectRowAtIndexPath:(NSIndexPath *)indexPath {;
+// the user selected a row in the table.
+- (void)tableView:(UITableView *)tv selectionDidChangeToIndexPath:(NSIndexPath *)newIndexPath
+	fromIndexPath:(NSIndexPath *)oldIndexPath {
+	
+	[tableView deselectRowAtIndexPath:oldIndexPath animated:YES];
 
 	NSArray *trips = [Trip getTrips];
 	//NSLog(@"%s indexPath.row = %d, section = %d", _cmd, indexPath.row, indexPath.section);
-  Trip *trip = [trips objectAtIndex:indexPath.row];
+  Trip *trip = [trips objectAtIndex:newIndexPath.row];
   [self inspectTrip:trip];
-  return indexPath;
+//  return indexPath;
 }
 
 #pragma mark UISimpleTableViewCell Method
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
-      withAvailableCell:(UITableViewCell *)availableCell 
-{
-  UISimpleTableViewCell *cell = nil;
-  if (availableCell != nil) {
-      // Use the existing cell if it's there
-      cell = (UISimpleTableViewCell *)availableCell;
-  } else {
-      // Create a new cell. CGRectZero allows the cell to determine the appropriate size.
-      cell = [[[UISimpleTableViewCell alloc] initWithFrame:CGRectZero] autorelease];
-  }
-	
+- (UITableViewCell *)tableView:(UITableView *)tv cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
+	if (cell == nil) {
+			// Create a new cell. CGRectZero allows the cell to determine the appropriate size.
+			cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:@"MyIdentifier"] autorelease];
+	}
+
 	Trip *aTrip = [[Trip getTrips] objectAtIndex:indexPath.row];
   //NSLog(@"%s indexPath row = %d, length = %d, section = %d", _cmd, [indexPath row], [indexPath length], [indexPath section]);
   cell.text = aTrip.title;
